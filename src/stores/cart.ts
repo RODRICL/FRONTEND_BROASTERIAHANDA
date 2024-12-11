@@ -37,7 +37,7 @@ export const useCartStore = defineStore('cart', {
     },
 
     // Acción para realizar la venta
-    async realizarVenta(idCliente: number) {
+    async realizarVenta() {
       const authStore = useAuthStore()
 
       // Si no hay productos en el carrito, no proceder
